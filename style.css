@@ -1,0 +1,203 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+
+    min-height: 100%;
+    width: 100%;
+    overscroll-behavior: none;  /* Disables the white bounce/overflow bars */
+
+}
+
+body {
+
+    background: linear-gradient(
+        #0e0e12,
+        #000000
+    );
+
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    overscroll-behavior: none;  /* Disables the white bounce/overflow bars */
+
+}
+
+img {
+
+    margin-top: 50px;
+    width: 50%;
+    min-width: 250px;
+    max-width: 500px;
+
+}
+
+.context-body {
+
+    position: relative;
+    z-index: 2;
+    
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+button {
+
+    height: 75px;
+    width: 30%;
+    min-width: 250px;
+    
+
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 5px;
+    border-width: 2px;
+
+    background-color: #000000;
+
+    border-style: solid;
+    border-color: #00B16F ;
+    color: #ffffff;
+
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    margin-bottom: 100px;
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.meeting-card {
+
+    width: 30%;
+    min-width: 250px;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+    margin: 25px;
+    padding: 25px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #00B16F;
+
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+
+/* Ambient rain columns in background */
+
+.rain {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.rain-col {
+
+    position: absolute;
+    top: -100%;
+    font-size: .75rem;
+    color: #384291;
+    line-height: 1.4;
+    white-space: pre;
+    animation: rain-fall linear infinite;
+    opacity: 0.4;
+
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@keyframes rain-fall {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(300%);
+  }
+}
+
+.martian-mono {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#scramble-text-date {
+    height: 20px;
+    font-size: 1rem;
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#scramble-status {
+    
+    margin: 8px;
+
+    color: #ff0000;
+
+    font-size: .65rem;
+
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+#scramble-text-banner {
+
+    font-size: 1rem;
+
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    margin: 8px;
+
+}
